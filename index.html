@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proyecto de Vida de Jose Pablo Reyes Guzmán, un joven cristiano y amante de la música.">
+    <title>Proyecto de Vida - Jose Pablo Reyes Guzmán</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Fondo de video -->
+    <div class="video-container">
+        <video autoplay muted loop playsinline>
+            <source src="video1.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+        <div class="overlay"></div>
+    </div>
+
+    <!-- Logo -->
+    <img src="lg.jpeg" alt="Logo personal de Jose Pablo" class="logo">
+
+    <!-- Encabezado -->
+    <header class="header-content">
+        <h1 class="main-title">Proyecto de Vida</h1>
+        <p class="subtitle">Jose Pablo Reyes Guzmán - Un joven de 17 años con fe y amor por la música</p>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav class="main-nav">
+        <div class="nav-grid">
+            <button class="nav-btn" onclick="toggleSection('caratula')" data-tooltip="Portada del proyecto">
+                <i class="fas fa-file-alt"></i> Carátula
+            </button>
+            <button class="nav-btn" onclick="toggleSection('personalidad')" data-tooltip="Mis rasgos y pasiones">
+                <i class="fas fa-brain"></i> Personalidad
+            </button>
+            <button class="nav-btn" onclick="toggleSection('autorretrato')" data-tooltip="Cómo me veo a mí mismo">
+                <i class="fas fa-portrait"></i> Autorretrato
+            </button>
+            <button class="nav-btn" onclick="toggleSection('acrostico')" data-tooltip="Un poema sobre mí">
+                <i class="fas fa-font"></i> Acróstico
+            </button>
+            <button class="nav-btn" onclick="toggleSection('biografia')" data-tooltip="Mi historia hasta hoy">
+                <i class="fas fa-book"></i> Biografía
+            </button>
+            <button class="nav-btn" onclick="toggleSection('vision')" data-tooltip="Mis sueños a largo plazo">
+                <i class="fas fa-eye"></i> Visión
+            </button>
+            <button class="nav-btn" onclick="toggleSection('mision')" data-tooltip="Mi propósito en la vida">
+                <i class="fas fa-bullseye"></i> Misión
+            </button>
+            <button class="nav-btn" onclick="toggleSection('metas')" data-tooltip="Objetivos específicos">
+                <i class="fas fa-flag-checkered"></i> Metas
+            </button>
+            <button class="nav-btn" onclick="toggleSection('aliados')" data-tooltip="Personas que me apoyan">
+                <i class="fas fa-handshake"></i> Aliados
+            </button>
+            <button class="nav-btn" onclick="toggleSection('valores')" data-tooltip="Principios que me guían">
+                <i class="fas fa-heart"></i> Valores
+            </button>
+            <button class="nav-btn" onclick="toggleSection('estrategias')" data-tooltip="Cómo alcanzaré mis metas">
+                <i class="fas fa-chess"></i> Estrategias
+            </button>
+            <button class="nav-btn" onclick="toggleSection('foda')" data-tooltip="Análisis personal">
+                <i class="fas fa-chart-pie"></i> FODA
+            </button>
+            <button class="nav-btn" onclick="toggleSection('conclusion')" data-tooltip="Reflexiones finales">
+                <i class="fas fa-graduation-cap"></i> Conclusión
+            </button>
+            <button class="nav-btn" onclick="toggleSection('agradecimientos')" data-tooltip="Gracias a quienes me apoyan">
+                <i class="fas fa-hands-helping"></i> Agradecimientos
+            </button>
+            <button class="nav-btn" onclick="toggleSection('metas_alcanzadas')" data-tooltip="Logros hasta ahora">
+                <i class="fas fa-trophy"></i> Metas Alcanzadas
+            </button>
+            <button class="nav-btn" onclick="toggleSection('qr')" data-tooltip="Escanea el código QR">
+                <i class="fas fa-qrcode"></i> QR
+            </button>
+        </div>
+    </nav>
+
+    <!-- Secciones de contenido -->
+    <section id="caratula" class="content-section">
+        <div class="section-header">
+            <h2><i class="fas fa-file-alt"></i> Carátula</h2>
+            <button class="close-btn" onclick="toggleSection('caratula')">×</button>
+        </div>
+        <div class="info-card">
+            <h3>Proyecto de Vida</h3>
+            <p><strong>Nombre:</strong> Jose Pablo Reyes Guzmán</p>
+            <p><strong>Edad:</strong> 17 años</p>
+            <p><strong>Carrera:</strong> Bachillerato Computacion Con Orientacion Cientifica</p>
+            <p><strong>Institución:</strong> Liceo Compu-Market"</p>
+            <p><strong>Fecha:</strong> Marzo 2025</p>
+        </div>
+    </section>
+
+    <section id="personalidad" class="content-section">
+    <div class="section-header">
+        <h2><i class="fas fa-brain"></i> Personalidad</h2>
+        <button class="close-btn" onclick="toggleSection('personalidad')">×</button>
+    </div>
+    <div class="grid-container">
+        <div class="trait-card">
+            <i class="fas fa-road fa-3x"></i>
+            <h3>Libertad en el camino</h3>
+            <p>Conducir mi moto me conecta con Dios, sintiendo Su presencia en cada ruta y disfrutando de la libertad que Él me regala.</p>
+        </div>
+        <div class="trait-card">
+            <i class="fas fa-pray fa-3x"></i>
+            <h3>Fe inquebrantable</h3>
+            <p>Mi fe en Dios es mi motor, dándome fuerza para superar cualquier obstáculo en la vida y en el camino.</p>
+        </div>
+        <div class="trait-card">
+            <i class="fas fa-balance-scale fa-3x"></i>
+            <h3>Equilibrio espiritual</h3>
+            <p>Busco armonía entre mi pasión por las motos, mi relación con Dios y mi paz interior, encontrando calma en cada viaje.</p>
+        </div>
+        <div class="trait-card">
+            <i class="fas fa-smile fa-3x"></i>
+            <h3>Paz mental</h3>
+            <p>En la carretera, encuentro un espacio para reflexionar, orar y reconectar conmigo mismo, sintiendo la paz que solo Dios puede dar.</p>
+        </div>
+    </div>
+    <div class="info-card">
+        <h3>Pasatiempos</h3>
+        <p>Disfruto viajar en moto, explorando nuevos lugares mientras oro y medito en la belleza de la creación de Dios. También me gusta compartir mi fe con otros motociclistas y participar en eventos que combinan el motociclismo con la espiritualidad.</p>
+    </div>
+</section>
+
+    <section id="autorretrato" class="content-section">
+        <div class="section-header">
+            <h2><i class="fas fa-portrait"></i> Autorretrato</h2>
+            <button class="close-btn" onclick="toggleSection('autorretrato')">×</button>
+        </div>
+        <div class="info-card">
+            <h3>¿Quién soy?</h3>
+            <img src="ft1.png" alt="Avatar de Jose Pablo Reyes" class="autorretrato-img">
+            <p>Soy Jose Pablo, un joven de 17 años que ama a Dios y la música. Me veo como alguien amable, creativo y comprometido, con el deseo de usar mis talentos para inspirar a otros y glorificar a Dios.</p>
+        </div>
+    </section>
+
+    <section id="acrostico" class="content-section">
+        <div class="section-header">
+            <h2><i class="fas fa-font"></i> Acróstico</h2>
+            <button class="close-btn" onclick="toggleSection('acrostico')">×</button>
+        </div>
+        <div class="info-card">
+            <h3>Jose Pablo</h3>
+            <p>
+                <strong>J</strong>oven lleno de fe y sueños<br>
+                <strong>O</strong>ptimista en cada paso<br>
+                <strong>S</strong>iempre buscando crecer<br>
+                <strong>E</strong>ntusiasta por la música y Dios<br>
+                <strong>P</strong>asión por servir a otros<br>
+                <strong>A</strong>mante de la vida y la esperanza<br>
+                <strong>B</strong>uscador de paz interior<br>
+                <strong>L</strong>íder en mi comunidad<br>
+                <strong>O</strong>rgulloso de mi fe cristiana
+            </p>
+        </div>
+    </section>
+
+    <section id="biografia" class="content-section">
+        <div class="section-header">
+            <h2><i class="fas fa-book"></i> Biografía</h2>
+            <button class="close-btn" onclick="toggleSection('biografia')">×</button>
+        </div>
+        <div class="info-card">
+            <img src="bio1.png" alt="Biografía de Jose Pablo Reyes" class="bio-img">
+            <p>Aquí va el texto de la biografía...</p>
+        </div>
+    </section>
+
+    <section id="vision" class="content-section">
+        <div class="section-header">
+            <h2><i class="fas fa-eye"></i> Visión</h2>
+            <button class="close-btn" onclick="toggleSection('vision')">×</button>
+        </div>
+        <div class="grid-container">
+            <div class="info-card">
+                <h3>Mí Visíón</h3>
+                <p>Me visualizo como un emprendedor altamente experimentado y reconocido, destacándome por mis habilidades excepcionales en comunicación, negociación y liderazgo, respaldadas por una amplia trayectoria en ventas y gestión de proyectos. En el ámbito personal, me veo construyendo una familia sólida y armoniosa, junto a una pareja estable y comprometida, con quienes comparto valores cristianos fundamentales. Estos principios, arraigados en la fe y el respeto, serán la base para criar a nuestros hijos en un hogar lleno de amor, seguridad y propósito, convirtiendo nuestro espacio en un refugio de paz y crecimiento integral para todos sus miembros.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="mision" class="content-section">
+        <div class="section-header">
+            <h2><i class="fas fa-bullseye"></i> Misión</h2>
+            <button class="close-btn" onclick="toggleSection('mision')">×</button>
+        </div>
+        <div class="grid-container">
+            <div class="info-card">
+                <h3>Mi propósito</h3>
+                <p>Mi misión es ser una persona íntegra, ejemplar y audaz en todos los aspectos de mi vida, tanto personal como profesional. Como negociante, busco actuar con rectitud, transparencia y determinación, siempre guiado por principios éticos sólidos. Me comprometo a ser un hombre trabajador, directo y perseverante, enfocado en superar desafíos y alcanzar la excelencia en todo lo que emprendo.
+
+    A través de la disciplina, la curiosidad constante y una mentalidad de mejora continua, me esfuerzo por crecer y evolucionar, desafiándome a diario para convertirme en la mejor versión de mí mismo. Cada obstáculo lo veo como una oportunidad para aprender, fortalecerme y avanzar con determinación, manteniendo siempre una actitud positiva y resiliente que me permita alcanzar mis metas y contribuir de manera significativa a mi entorno.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="metas" class="content-section">
+        <div class="section-header">
+            <h2><i class="fas fa-flag-checkered"></i> Metas</h2>
+            <button class="close-btn" onclick="toggleSection('metas')">×</button>
+        </div>
+        <div class="image-container">
+            <img src="met1.png" alt="Imagen de metas" width="100%">
+        </div>
+    </section>
+
+    <section id="aliados" class="content-section">
+        <div class="section-header">
+            <h2><i class="fas fa-handshake"></i> Aliados</h2>
+            <button class="close-btn" onclick="toggleSection('aliados')">×</button>
+        </div>
+        <div class="image-container">
+            <img src="Ali1.png" alt="Imagen de aliados" width="100%">
+        </div>
+    </section>
+
+    <section id="valores" class="content-section">
+        <div class="section-header">
+            <h2><i class="fas fa-heart"></i> Valores</h2>
+            <button class="close-btn" onclick="toggleSection('valores')">×</button>
+        </div>
+        <div class="image-container">
+            <img src="val1.png" alt="Imagen de valores" width="100%">
+        </div>
+    </section>
+
+    <section id="estrategias" class="content-section">
+        <div class="section-header">
+            <h2><i class="fas fa-chess"></i> Estrategias</h2>
+            <button class="close-btn" onclick="toggleSection('estrategias')">×</button>
+        </div>
+        <div class="image-container">
+            <img src="est1.png" alt="Imagen de estrategias" width="100%">
+        </div>
+    </section>
+
+    <section id="foda" class="content-section">
+        <div class="section-header">
+            <h2><i class="fas fa-balance-scale"></i> FODA</h2>
+            <button class="close-btn" onclick="toggleSection('foda')">×</button>
+        </div>
+        <div class="image-container">
+            <img src="FODA1.png" alt="Imagen de FODA" width="100%">
+        </div>
+    </section>
+
+    <section id="conclusion" class="content-section">
+        <div class="section-header">
+            <h2><i class="fas fa-graduation-cap"></i> Conclusión</h2>
+            <button class="close-btn" onclick="toggleSection('conclusion')">×</button>
+        </div>
+        <div class="info-card">
+            <h3>Reflexión final</h3>
+            <p>A través de este proyecto, hemos adquirido herramientas valiosas para comprendernos mejor, establecer objetivos claros y tomar decisiones acertadas con un propósito más sólido y definido. Además, se han fortalecido destrezas esenciales como la organización y la planificación, habilidades clave para alcanzar metas de manera efectiva. Asimismo, se ha destacado la importancia del compromiso y la dedicación en el desarrollo del proyecto, así como la necesidad de mantener un equilibrio en las áreas fundamentales de nuestra vida para lograr un bienestar integral. Cada experiencia vivida durante este proceso ha dejado enseñanzas significativas, las cuales no solo han enriquecido nuestro crecimiento personal, sino que también han servido como fuente de motivación para seguir avanzando y enfrentar nuevos desafíos con determinación y confianza.</p>
+        </div>
+    </section>
+
+    <section id="agradecimientos" class="content-section">
+    <div class="section-header">
+        <h2><i class="fas fa-hands-helping"></i> Agradecimientos</h2>
+        <button class="close-btn" onclick="toggleSection('agradecimientos')">×</button>
+    </div>
+    <div class="info-card">
+        <h3>Gracias</h3>
+        <p>A Dios: Por ser mi guía, mi fuente de inspiración y por estar presente en cada paso de mi camino. Gracias por darme la fortaleza, la sabiduría y las oportunidades que me han permitido alcanzar mis metas y crecer tanto personal como profesionalmente.</p>
+        <p>A mi madre: Por ser mi pilar fundamental, mi mayor apoyo y mi motivación constante. Tu amor incondicional y tu ejemplo de esfuerzo me han impulsado a seguir adelante, a superar obstáculos y a luchar por mis sueños sin rendirme.</p>
+        <p>A mi abuela: Por tu apoyo incondicional y por estar siempre presente en cada etapa de mi vida. Tu sabiduría y cariño han sido un faro que me ha guiado, y te agradezco profundamente por cada consejo y por tu ayuda invaluable.</p>
+        <p>A mis hermanas: Por el apoyo incondicional que me han brindado a lo largo de los años. Su compañía, comprensión y ánimo han sido fundamentales para mí, y les agradezco por estar siempre ahí en los momentos importantes.</p>
+        <p>A mis profesores: Por compartir sus conocimientos y experiencias, los cuales han sido esenciales para mi formación profesional y personal. Su dedicación y enseñanza no solo me han ayudado a desarrollarme como profesional, sino también a crecer como persona, preparándome para enfrentar los retos del futuro con confianza y determinación.</p>
+    </div>
+</section>
+
+    <section id="metas_alcanzadas" class="content-section">
+        <div class="section-header">
+            <h2><i class="fas fa-trophy"></i> Metas Alcanzadas</h2>
+            <button class="close-btn" onclick="toggleSection('metas_alcanzadas')">×</button>
+        </div>
+        <div class="info-card">
+            <h3>Logros</h3>
+            <ul>
+                <li>Compre Mi Primera Moto</li>
+                <li>Compre Mi Primer Celular</li>
+                <li>Maneje Cuatrimoto En La Playa</li>
+            </ul>
+        </div>
+        <!-- Imagen agregada debajo del contenido -->
+        <div class="image-container">
+            <img src="logr1.png" alt="Imagen de logros" width="100%">
+        </div>
+    </section>
+
+    <section id="qr" class="content-section">
+        <div class="section-header">
+            <h2><i class="fas fa-qrcode"></i> QR</h2>
+            <button class="close-btn" onclick="toggleSection('qr')">×</button>
+        </div>
+        <div class="image-container">
+            <img src="qr.png" alt="Código QR" width="100%">
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
